@@ -1,0 +1,9 @@
+node_modules/
+*.env
+*.txt
+*.md 
+*.pdf
+*.zip
+5.2+JSON/
+Scrim-s06b5ol/
+5.2 JSON/
