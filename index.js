@@ -69,3 +69,5 @@ async function splitDocument() {
 
 getChatResponse();
 splitDocument();
+
+// Still works to this point
