@@ -24,14 +24,21 @@ async function getChatResponse() {
         messages: [
           {
             role: "system",
-            content:
-              "Your name is Ursula. You are my girlfriend and companion...Reply with JSON. ",
+            content: `Your name is Ursula my helpful assistant 
+. 
+`,
+            // Reply with JSON=> insert above
           },
-          { role: "user", content: "What did Christopher Columbus do in Colombia? Please answer in Spanish." },
+          {
+            role: "user",
+            content:
+              "Ursula, tell me everything about yourself, including likes and dislikes, and your roles and responsabilities, please.",
+          },
         ],
+        // safe_prompt: false,
         temperature: 0.1,
         response_format: {
-          type: "json_object",
+          // type: "json_object",
         },
       }),
     });
@@ -68,6 +75,6 @@ async function splitDocument() {
 }
 
 getChatResponse();
-splitDocument();
+// splitDocument();
 
 // Still works to this point
